@@ -1,0 +1,25 @@
+{
+  "author" : "Gustavo Maia Neto (Guto Maia) <guto@guto.net>",
+  "name" : "backbone-jsdom-testing",
+  "version" : "0.0.1",
+  "description" : "Stackoverflow help on backbone jsdom testing",
+  "keywords" : ["util", "functional", "client", "browser"],
+  "dependencies": {
+    "jquery": "2.1.1",
+    "underscore": "1.7.0",
+    "backbone": "1.1.2",
+    "amdefine": "0.1.0",
+    "requirejs-text": "2.0.12"
+  },
+  "devDependencies": {
+    "jsdom": "3.1.0",
+    "nodeunit": "0.9.0",
+    "jshint": "2.5.6",
+    "jslint": "0.6.4",
+    "requirejs": "2.0.4"
+   },
+  "repository" : {"type": "git", "url": "https://github.com/gutomaia/stackoverflow_questions.git"},
+  "scripts": {
+    "test": "nodeunit test"
+  }
+}
