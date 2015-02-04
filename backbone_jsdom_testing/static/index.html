@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+        var require = {
+            shim : {
+                "backbone":  { "deps" : ['underscore'] },
+            },
+            paths: {
+                "jquery" : "/component/jquery/jquery",
+                "bootstrap" :  "/component/bootstrap/bootstrap",
+                "backbone": "/component/backbone/backbone",
+                "underscore": "/component/underscore/underscore",
+                "text": "/component/requirejs-text/text"
+            }
+        };
+        </script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript" data-main="init.js" src="/component/requirejs/require.js"></script>
+    </body>
+</html>
