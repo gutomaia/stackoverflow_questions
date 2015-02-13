@@ -18,27 +18,17 @@ exports.setUp = function(callback){
 
     // var $ = jQuery.create(window);
 
-    // var requirejs = require('requirejs');
-
-
     requirejs.config({ 
-      baseUrl: __dirname + '/',
-      // config: {
-      //   text: {
-      //       env: 'xhr'
-      //   }
-      // },
-      packages: [{
-          name: 'text',
-          location: '../node_modules/requirejs-text/text.js ',
-          main: 'text.js'
-        },
-      ],
+      baseUrl:  __dirname,
+      nodeRequire: require,
+      paths: {
+          text: '../node_modules/requirejs-text/text'
+      }
     });
     
     // this.App = requirejs('./../lib/analytics-app.js');
     requirejs([__dirname + '/../lib/views/stackoverflow.js'], function(bb){
-        //console.log(bb);
+        console.log(bb);
         callback();
     });
 };
@@ -47,6 +37,6 @@ exports.setUp = function(callback){
 
 exports.test_aa = function(test){
     //new this.App({el:$('#app')[0]});
-    new this.App();
+    // new this.App();
     test.done();
 };
